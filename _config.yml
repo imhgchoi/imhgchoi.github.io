@@ -109,7 +109,7 @@ analytics:
 author:
   name             : "HyeongKyu Froilan Choi"
   avatar           : "/assets/images/profileimg.jpg"
-  bio              : "I am an undergraduate student in Korea University majoing in Business Administration and Computer Science. My field of interest is Financial Machine Learning, and I am especially devoted to Bayesian Deep Learning and Reinforcement Learning for asset portfolio management"
+  bio              : "I am an undergraduate student in Korea University majoring in Business Administration and Computer Science. My field of interest is Financial Machine Learning, and I am especially devoted to Bayesian Deep Learning and Reinforcement Learning for asset portfolio management."
   location         : "Seoul, South Korea"
   email            : "imhgchoi@korea.ac.kr"
   linkedin	        : "hyeonggyufroilanchoi"
