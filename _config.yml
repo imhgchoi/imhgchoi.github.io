@@ -116,6 +116,9 @@ author:
   facebook       : "hyeonggyufroilan"
   github	        : "imhgchoi"
   links:
+    - label: "Google Scholar"
+      icon: "fas fa-graduation-cap"
+      url: "https://scholar.google.com/citations?user=jHy6j-0AAAAJ&hl=ko"
     - label: "CV"
       icon: "fa fa-file"
       url: "https://github.com/imhgchoi/imhgchoi.github.io/raw/master/assets/docs/curriculum_vitae.pdf"
