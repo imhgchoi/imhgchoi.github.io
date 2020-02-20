@@ -2,9 +2,8 @@
 main:
   - title: "Projects"
     url: "/projects/"
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
+  - title: "About"
+    url: "https://imhgchoi.github.io/"
   # - title: "Sample Collections"
   #   url: /collection-archive/
   # - title: "Sitemap"
