@@ -1,6 +1,6 @@
 ---
 permalink: /projects/
-title: "project test"
+title: "ML projects"
 date: 2020-02-20 00:00:00 -0400
 categories: projects
 ---
