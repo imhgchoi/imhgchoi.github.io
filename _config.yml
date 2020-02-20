@@ -108,10 +108,13 @@ analytics:
 # Site Author
 author:
   name             : "HyeongKyu Froilan Choi"
-  avatar           : "/assets/images/profileimg.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
+  avatar           : "/assets/images/profileimg.jpg"
+  bio              : "I am an undergraduate student in Korea University majoing in Business Administration and Computer Science. My field of interest is Financial Machine Learning, and I am especially devoted to Bayesian Deep Learning and Reinforcement Learning for asset portfolio management 
+  location         : "Seoul, South Korea"
   email            : "imhgchoi@korea.ac.kr"
+  linkedin	        : "hyeonggyufroilanchoi"
+  facebook       : "hyeonggyufroilan"
+  github	        : "imhgchoi"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
@@ -128,9 +131,9 @@ author:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       # url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
+    - label: "CV"
+      icon: "fa fa-file"
+      url: "https://instagram.com/"
 
 # Site Footer
 footer:
