@@ -193,16 +193,15 @@ The list of models we built from-scratch is as follows :
 The regression models' outputs were converted to a classification problem for convenience in evaluation. For instance,
 if the model predicted a score of 3:1 for Home versus Away, this was converted to "Home Wins".  
 
-<center>_Check out our project report for details!_</center>
+<center>Check out our project report for details!</center>
 
   <br>
   
 * **So... Are We Makin' Money?**
 
 <center>
-<img src="../assets/images/soccer_performance.PNG" alt="drawing" width="600"/>
+<img src="../assets/images/soccer_performance.PNG" alt="drawing" width="450"/>
 </center>
-  <br> 
   
 > Note that BL-SVM and BL-MLP stands for Baseline-SVM and Baseline-MLP. These are our baseline models from 
  our reference, G. Kumar's masters thesis "[Machine Learning for Soccer Analytics](https://www.researchgate.net/publication/257048220_Machine_Learning_for_Soccer_Analytics)".
@@ -219,10 +218,10 @@ For convenience, we plotted a scatter-plot with the F1-score on the x axis, and 
 We concluded that the Ridge Regression model performed best overall, and thus carried out a backtest for betting on the
 model.
 
+<br>
 <center>
 <img src="../assets/images/soccer_simul.PNG" alt="drawing" width="400"/>
 </center>
-  <br> 
 
 > The Random model randomly selects a winning team for bet. And the Copycat model accesses the betting odds and selects
 the team with the lowest odds; thus, the team which the most people betted on.
@@ -230,3 +229,10 @@ the team with the lowest odds; thus, the team which the most people betted on.
 The Ridge Regression model performed way better than the random model and the copycat model in terms of Return On Investment.
 Although we later came to know that bets are usually made in bundles - that is, you need to correctly predict multiple
 games' results correctly to win the bet - we were pleased to know that our model performed superior to our benchmarks.
+
+<br>
+<center>
+
+[up to the top!](https://imhgchoi.github.io/projects/#stock-price-correlation-coefficient-prediction)  
+
+</center
