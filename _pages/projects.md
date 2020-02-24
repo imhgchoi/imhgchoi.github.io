@@ -4,7 +4,7 @@ title: "Contents"
 categories: projects
 use_math: true
 ---
-#### 1. [Stock Price Correlation Coefficient Prediction](#stock-price-correlation-coefficient-prediction)
+#### 1. [Stock Price Correlation Coefficient Prediction](#stock-price-correlation-coefficient-prediction)  
 #### 2. [Soccer Match Result Prediction and its Application](#soccer-match-result-prediction-and-its-application)
 
 ---
@@ -140,17 +140,17 @@ of stock assets.
 
 report : [Soccer Match Result Prediction and its Application](https://github.com/imhgchoi/imhgchoi.github.io/raw/master/assets/docs/Soccer_Match_Prediction.pdf)  
 slides : [PPT Slides](https://github.com/imhgchoi/imhgchoi.github.io/raw/master/assets/docs/Soccer_ppt.pdf)  
-codes : [github repo](https://github.com/imhgchoi/soccer-match-predict)
+codes : [github repo](https://github.com/imhgchoi/soccer-match-predict)  
 
 Note that this project was led as a team for an undergraduate Machine Learning [COSE362-2019F] course. The following
-are the github links of those who were my teammates :
-
+are the github links of those who were my teammates :  
    * [HyunHo Choi](https://github.com/chlgusgh715)
    * [JaeHyun Lee](https://github.com/LEE-JAE-HYUN179)
    * [JiHwan Park](https://github.com/thepark96)
    * [JuHyeon Shin](https://github.com/juhyeon1212)
-   
-   
+    
+    
+  <br>   
 <center>
 <img src="../assets/images/soccer.jpg" alt="drawing" width="800"/>
 </center>
@@ -192,14 +192,15 @@ The list of models we built from-scratch is as follows :
 
 The regression models' outputs were converted to a classification problem for convenience in evaluation. For instance,
 if the model predicted a score of 3:1 for Home versus Away, this was converted to "Home Wins".  
-_Check out our project report for details!_
+
+<center>_Check out our project report for details!_</center>
 
   <br>
   
 * **So... Are We Makin' Money?**
 
 <center>
-<img src="../assets/images/soccer_performance.png" alt="drawing" width="600"/>
+<img src="../assets/images/soccer_performance.PNG" alt="drawing" width="600"/>
 </center>
   <br> 
   
@@ -211,7 +212,7 @@ _Check out our project report for details!_
 For convenience, we plotted a scatter-plot with the F1-score on the x axis, and the ROI on the y axis.
 
 <center>
-<img src="../assets/images/soccer_performance_plot.png" alt="drawing" width="400"/>
+<img src="../assets/images/soccer_performance_plot.PNG" alt="drawing" width="400"/>
 </center>
   <br> 
   
@@ -219,7 +220,7 @@ We concluded that the Ridge Regression model performed best overall, and thus ca
 model.
 
 <center>
-<img src="../assets/images/soccer_simul.png" alt="drawing" width="400"/>
+<img src="../assets/images/soccer_simul.PNG" alt="drawing" width="400"/>
 </center>
   <br> 
 
