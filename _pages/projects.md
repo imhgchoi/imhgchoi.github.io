@@ -17,10 +17,12 @@ code link : [github repository](https://github.com/imhgchoi/ARIMA-LSTM-hybrid-co
 
 According to Harry Markowitz's Modern Portfolio Theory, a correct prediction of the correlation coefficient of 
 two assets is crucial for accurately assessing risk, and optimizing the portfolio. For instance, let us assume
-a simple portfolio that consists of two different stock assets A and B. Let $$a+b$$
-
-<img src="https://render.githubusercontent.com/render/math?math=e^{i \pi} = -1"> 
-  
+a simple portfolio that consists of two different stock assets A and B. Let $\w_A$ and $\w_B$ be the weights assigned
+to each asset in the portfolio, $\sigma_A$ and $\sigma_B$ the historical standard deviation of each asset, and
+$\rho_{AB}$ be the correlation coefficient of them. Then, the portfolio's risk is computed as follows :  
+$$
+\sigma_p = \w^2_A\sigma^2_A + \w^2_B\sigma^2_B + 2\w_A\w_B\sigma_A\sigma_B\rho_{AB}
+$$
 
 
 Predicting the price correlation of two assets for future time periods is important in portfolio optimization. We apply LSTM recurrent neural networks
