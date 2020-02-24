@@ -1,6 +1,6 @@
 ---
 permalink: /projects/
-title: "Project Contents"
+title: "Contents"
 categories: projects
 use_math: true
 ---
