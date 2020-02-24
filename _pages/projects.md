@@ -152,7 +152,7 @@ are the github links of those who were my teammates :
     
   <br>   
 <center>
-<img src="../assets/images/soccer.jpg" alt="drawing" width="800"/>
+<img src="../assets/images/soccer.jpg" alt="drawing" width="950"/>
 </center>
   <br>
   
