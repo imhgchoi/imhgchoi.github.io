@@ -14,7 +14,7 @@ use_math: true
 * paper : [Stock Price Correlation Coefficient Prediction with ARIMA LSTM Hybrid Model](https://arxiv.org/pdf/1808.01560.pdf)  
 * codes : [github repository](https://github.com/imhgchoi/ARIMA-LSTM-hybrid-corrcoef-predict)
 
-![stock](../assets/images/stocks.jpg =100x20)
+<img src="../assets/images/stocks.jpg" alt="drawing" width="200"/>
 
 **How did we compute the correlation coefficient for our portfolios?**  
 According to Harry Markowitz's Modern Portfolio Theory, we normally assess the stock portfolio's risk as follows.
