@@ -122,7 +122,7 @@ The model was tested against the formerly mentioned financial predictive models.
 the ARIMA-LSTM hybrid model outperforms all the other models.
 
 <center>
-<img src="../assets/images/arimalstm_test1.png" alt="drawing" width="450"/>
+<img src="../assets/images/arimalstm_test1.png" alt="drawing" width="750"/>
 </center>
   <br> 
 
