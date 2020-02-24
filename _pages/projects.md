@@ -82,8 +82,8 @@ where $\alpha$ and $\beta$ notation here denotes the industry sector, and $n_\al
  of assets in the corresponding industry sector.
  <br>  
 
-You may refer to the paper's section 2, "Various Financial Models for Correlation Prediction" for a more detailed 
-elaboration on each model.
+You may refer to the paper's section 2, "Various Financial Models for Correlation Prediction" for more detailed 
+elaboration for each model.
  <br>  
  <br>  
  
@@ -106,7 +106,7 @@ for each time step is computed, which becomes the input for the next LSTM RNN se
  
 <center>
 <img src="../assets/images/lstm.png" alt="drawing" width="450"/>
-
+<br>
 LSTM Cell Architecture
 </center>
   <br> 
