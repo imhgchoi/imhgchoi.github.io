@@ -1,4 +1,4 @@
-cd C:\Users\Froilan\Desktop\myFiles\profile_page
+cd C:\Users\Froilan\Desktop\myFiles\profile
 
 git add .
 
