@@ -15,10 +15,11 @@ use_math: true
 * codes : [github repository](https://github.com/imhgchoi/ARIMA-LSTM-hybrid-corrcoef-predict)
 
 <center>
-<img src="../assets/images/stocks.jpg" alt="drawing" width="700"/>
+<img src="../assets/images/stocks.jpg" alt="drawing" width="900"/>
 </center>
-
-**How did we compute the correlation coefficient for our portfolios?**  
+  <br><br>
+  
+**Why do we need to compute the correlation coefficients for investment?**  
 According to Harry Markowitz's Modern Portfolio Theory, we normally assess the stock portfolio's risk as follows.
  <br>  
 <center>
@@ -31,6 +32,7 @@ where $w_i$ and $w_j$ be the weights assigned to each asset in the portfolio, $\
 standard deviation, and $\rho_{ij}$ the correlation coefficient of those two.
  <br>  
  
+**How do we normally predict correlation coefficients?**  
 Here, various methods have been used to estimate the correlation coefficient value $\rho_{ij}$.  
 One of the most simplest and common method used is what so called the **Full Historical Model**. The model assumes that
 the correlation coefficient will be identical to the historical value. Thus, the equation,
@@ -51,6 +53,7 @@ $$
 $$
 </center>
 where $n$ is the number of assets in the portfolio,
+ <br>  
  <br>  
 
 the **Single-Index Model**
@@ -79,8 +82,10 @@ where $\alpha$ and $\beta$ notation here denotes the industry sector, and $n_\al
 
 You may refer to the paper's section 2, "Various Financial Models for Correlation Prediction" for a more detailed 
 elaboration on each model.
- <br><br>  
+ <br>  
+ <br>  
  
+**Room for Improvements?**  
 The above variations of correlation coefficient estimating models have shown some success. However, the models only
 consider linearity in prediction. The financial data are innately non-linear, thus calling for non linear models in
 correlation coefficient prediction. Here, I proposed to adopt the ARIMA-LSTM hybrid model to capture both linearity
