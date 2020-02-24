@@ -235,4 +235,4 @@ games' results correctly to win the bet - we were pleased to know that our model
 
 <br>
 
-[up to the top!](https://imhgchoi.github.io/projects/#stock-price-correlation-coefficient-prediction)  
+[up to the top!](https://imhgchoi.github.io/projects/)  
