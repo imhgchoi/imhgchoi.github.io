@@ -11,15 +11,16 @@ use_math: true
 
 ## Stock Price Correlation Coefficient Prediction
 
-* paper : [Stock Price Correlation Coefficient Prediction with ARIMA LSTM Hybrid Model](https://arxiv.org/pdf/1808.01560.pdf)  
-* codes : [github repository](https://github.com/imhgchoi/ARIMA-LSTM-hybrid-corrcoef-predict)
+paper : [Stock Price Correlation Coefficient Prediction with ARIMA LSTM Hybrid Model](https://arxiv.org/pdf/1808.01560.pdf)  
+codes : [github repository](https://github.com/imhgchoi/ARIMA-LSTM-hybrid-corrcoef-predict)
 
 <center>
 <img src="../assets/images/stocks.jpg" alt="drawing" width="800"/>
 </center>
   <br>
   
-**Why do we need to compute the correlation coefficients for investment?**  
+* **Why do we need to compute the correlation coefficients for investment?**  
+
 According to Harry Markowitz's Modern Portfolio Theory, we normally assess the stock portfolio's risk as follows.
  <br>  
 <center>
@@ -33,7 +34,8 @@ standard deviation, and $\rho_{ij}$ the correlation coefficient of those two.
  <br>
  <br>  
  
-**How do we predict correlation coefficients?**  
+* **How do we predict correlation coefficients?**
+
 Here, various methods have been used to estimate the correlation coefficient value $\rho_{ij}$.  
 One of the most simplest and common method used is what so called the **Full Historical Model**. The model assumes that
 the correlation coefficient will be identical to the historical value. Thus, the equation,
@@ -63,7 +65,7 @@ $$
 \hat{\rho}_{ij}^{(t)} = \frac{\displaystyle \beta_i \beta_j \sigma_m^2} {\displaystyle \sigma_i \sigma_j}
 $$
 </center>
-where $beta_i$/$beta_j$ is the beta value for stock item $i$, and $\sigma_m$ is the market's volatility,
+where $\beta_i$/$\beta_j$ are the beta value for stock item $i$, and $\sigma_m$ is the market's volatility,
  <br>  
 
 the **Multi-Group Model**
@@ -90,7 +92,8 @@ elaboration on each model.
 </center>
   <br>
   
-**Room for Improvements?**  
+* **Room for Improvements?**  
+
 The above models only consider linearity in their predictions. However, the financial data are innately non-linear,
 thus calling for non-linear models for its correlation coefficient predictions. In my project paper, I proposed to
 adopt the ARIMA-LSTM hybrid model to capture both linearity and non-linearity in prediction.  
@@ -102,7 +105,7 @@ sliding window. The order for each time series is selected dynamically based on 
 for each time step is computed, which becomes the input for the next LSTM RNN sector.
  
 <center>
-<img src="../assets/images/lstm.jpg" alt="drawing" width="450"/>
+<img src="../assets/images/lstm.png" alt="drawing" width="450"/>
 
 LSTM Cell Architecture
 </center>
@@ -113,7 +116,24 @@ and (non-linearity-based) residual value. The two predictions are added to rende
   <br>
   <br> 
   
-**Experiment Results**
-The model was tested against
+* **Experiment Results**
 
-### EPL Soccer Match Result Prediction with ML Models from Scratch
+The model was tested against the formerly mentioned financial predictive models. The performance indices indicate that
+the ARIMA-LSTM hybrid model outperforms all the other models.
+
+<center>
+<img src="../assets/images/arimalstm_test1.png" alt="drawing" width="450"/>
+</center>
+  <br> 
+
+To test for robustness, I iteratively tested the model on different combinations of 10 stock assets as well.
+
+<center>
+<img src="../assets/images/arimalstm_test2.png" alt="drawing" width="450"/>
+</center>
+  <br> 
+  
+  
+## EPL Soccer Match Result Prediction with ML Models from Scratch
+
+under construction!!
