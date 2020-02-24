@@ -1,13 +1,10 @@
 ---
 permalink: /projects/
-title: "ML projects"
+title: "Contents"
 date: 2020-02-20 00:00:00 -0400
 categories: projects
 ---
-# Contents
-1. [Stock Price Correlation Coefficient
-Prediction with ARIMA-LSTM
-Hybrid Model](#Stock-Price-Correlation-Coefficient-Prediction-with-ARIMA-LSTM-Hybrid-Model)
+#### 1. [Stock Price Correlation Coefficient Prediction with ARIMA LSTM Hybrid Model](#stock-price-correlation-coefficient-prediction-with-arima-lstm-hybrid-model)
 
 
 ---
@@ -33,5 +30,6 @@ Hybrid Model](#Stock-Price-Correlation-Coefficient-Prediction-with-ARIMA-LSTM-Hy
 
 
 
-## Stock Price Correlation Coefficient Prediction with ARIMA-LSTM Hybrid Model
+## Stock Price Correlation Coefficient Prediction with ARIMA LSTM Hybrid Model
+
 dafdd
