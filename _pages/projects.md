@@ -15,9 +15,9 @@ use_math: true
 * codes : [github repository](https://github.com/imhgchoi/ARIMA-LSTM-hybrid-corrcoef-predict)
 
 <center>
-<img src="../assets/images/stocks.jpg" alt="drawing" width="900"/>
+<img src="../assets/images/stocks.jpg" alt="drawing" width="800"/>
 </center>
-  <br><br>
+  <br>
   
 **Why do we need to compute the correlation coefficients for investment?**  
 According to Harry Markowitz's Modern Portfolio Theory, we normally assess the stock portfolio's risk as follows.
@@ -30,9 +30,10 @@ $$
 
 where $w_i$ and $w_j$ be the weights assigned to each asset in the portfolio, $\sigma_i$ and $\sigma_j$ the historical
 standard deviation, and $\rho_{ij}$ the correlation coefficient of those two.
+ <br>
  <br>  
  
-**How do we normally predict correlation coefficients?**  
+**How do we predict correlation coefficients?**  
 Here, various methods have been used to estimate the correlation coefficient value $\rho_{ij}$.  
 One of the most simplest and common method used is what so called the **Full Historical Model**. The model assumes that
 the correlation coefficient will be identical to the historical value. Thus, the equation,
@@ -53,7 +54,6 @@ $$
 $$
 </center>
 where $n$ is the number of assets in the portfolio,
- <br>  
  <br>  
 
 the **Single-Index Model**
@@ -85,25 +85,35 @@ elaboration on each model.
  <br>  
  <br>  
  
+<center>
+<img src="../assets/images/questions.png" alt="drawing" width="300"/>
+</center>
+  <br>
+  
 **Room for Improvements?**  
-The above variations of correlation coefficient estimating models have shown some success. However, the models only
-consider linearity in prediction. The financial data are innately non-linear, thus calling for non linear models in
-correlation coefficient prediction. Here, I proposed to adopt the ARIMA-LSTM hybrid model to capture both linearity
-and non-linearity in prediction.  
-The ARIMA-LSTM model was originally proposed by G.P. Zhang, in his paper "Time series forecasting using a hybrid ARIMA 
-and neural network model" in year 2003.
+The above models only consider linearity in their predictions. However, the financial data are innately non-linear,
+thus calling for non-linear models for its correlation coefficient predictions. In my project paper, I proposed to
+adopt the ARIMA-LSTM hybrid model to capture both linearity and non-linearity in prediction.  
+Note that the ARIMA-LSTM model was originally proposed in 2003 by G.P. Zhang, in his paper "[Time series forecasting using a hybrid ARIMA 
+and neural network model](https://www.sciencedirect.com/science/article/abs/pii/S0925231201007020)".
 
-Predicting the price correlation of two assets for future time periods is important in portfolio optimization. We apply LSTM recurrent neural networks
-(RNN) in predicting the stock price correlation coefficient of two individual
-stocks. RNN’s are competent in understanding temporal dependencies. The
-use of LSTM cells further enhances its long term predictive properties. To encompass both linearity and nonlinearity in the model, we adopt the ARIMA
-model as well. The ARIMA model filters linear tendencies in the data and
-passes on the residual value to the LSTM model. The ARIMA-LSTM hybrid
-model is tested against other traditional predictive financial models such as
-the full historical model, constant correlation model, single-index model and
-the multi-group model. In our empirical study, the predictive ability of the
-ARIMA-LSTM model turned out superior to all other financial models by a
-significant scale. Our work implies that it is worth considering the ARIMA LSTM model to forecast correlation coefficient for portfolio optimization.
+The ARIMA sector renders a linear prediction on the stream of correlation coefficients precomputed with a fixed-sized 
+sliding window. The order for each time series is selected dynamically based on its AIC values. Then, the residual value
+for each time step is computed, which becomes the input for the next LSTM RNN sector.
+ 
+<center>
+<img src="../assets/images/lstm.jpg" alt="drawing" width="450"/>
 
+LSTM Cell Architecture
+</center>
+  <br> 
+ 
+For prediction, The ARIMA model and the LSTM RNN model each predicts the future (linearity-based) correlation coefficient
+and (non-linearity-based) residual value. The two predictions are added to render the final correlation coefficient value.
+  <br>
+  <br> 
+  
+**Experiment Results**
+The model was tested against
 
 ### EPL Soccer Match Result Prediction with ML Models from Scratch
