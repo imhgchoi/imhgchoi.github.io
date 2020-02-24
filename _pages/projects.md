@@ -135,7 +135,10 @@ To test for robustness, I iteratively tested the model on different combinations
   
 It seems that the ARIMA-LSTM hybrid model has a clear edge in predicting the future correlation coefficient of a pair
 of stock assets.
-  
+ 
+<br>
+<br>
+
 ## Soccer Match Result Prediction and its Application
 
 report : [Soccer Match Result Prediction and its Application](https://github.com/imhgchoi/imhgchoi.github.io/raw/master/assets/docs/Soccer_Match_Prediction.pdf)  
@@ -231,8 +234,5 @@ Although we later came to know that bets are usually made in bundles - that is, 
 games' results correctly to win the bet - we were pleased to know that our model performed superior to our benchmarks.
 
 <br>
-<center>
 
 [up to the top!](https://imhgchoi.github.io/projects/#stock-price-correlation-coefficient-prediction)  
-
-</center
