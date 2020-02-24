@@ -88,7 +88,7 @@ elaboration for each model.
  <br>  
  
 <center>
-<img src="../assets/images/questions.png" alt="drawing" width="300"/>
+<img src="../assets/images/questions.png" alt="drawing" width="450"/>
 </center>
   <br>
   
@@ -133,6 +133,8 @@ To test for robustness, I iteratively tested the model on different combinations
 </center>
   <br> 
   
+It seems that the ARIMA-LSTM hybrid model has a clear edge in predicting the future correlation coefficient of a pair
+of stock assets.
   
 ## EPL Soccer Match Result Prediction with ML Models from Scratch
 
