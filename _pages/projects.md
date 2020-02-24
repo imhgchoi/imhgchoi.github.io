@@ -4,15 +4,15 @@ title: "Project Lists"
 categories: projects
 use_math: true
 ---
-#### 1. [Stock Price Correlation Coefficient Prediction with ARIMA LSTM Hybrid Model](#stock-price-correlation-coefficient-prediction)
+#### 1. [Stock Price Correlation Coefficient Prediction](#stock-price-correlation-coefficient-prediction)
 #### 2. [EPL Soccer Match Result Prediction with ML Models from Scratch](#epl-soccer-match-result-prediction-with-ml-models-from-scratch)
 
 ---
 
 ## Stock Price Correlation Coefficient Prediction
 
-paper : [Stock Price Correlation Coefficient Prediction with ARIMA LSTM Hybrid Model](https://arxiv.org/pdf/1808.01560.pdf)  
-code : [github repository](https://github.com/imhgchoi/ARIMA-LSTM-hybrid-corrcoef-predict)
+* paper : [Stock Price Correlation Coefficient Prediction with ARIMA LSTM Hybrid Model](https://arxiv.org/pdf/1808.01560.pdf)  
+* codes : [github repository](https://github.com/imhgchoi/ARIMA-LSTM-hybrid-corrcoef-predict)
 
 According to Harry Markowitz's Modern Portfolio Theory, a correct prediction of the correlation coefficient of 
 two assets is crucial for accurately assessing risk, and optimizing the portfolio. For instance, let us assume
@@ -38,7 +38,16 @@ $$
 </center>
  <br>  
  
-Several other models for 
+Several other models for correlation coefficient prediction include...  
+the **Constant Correlation Model**
+ <br>  
+<center>
+$$
+\hat{\rho}_{ij}^{(t)} = \frac{\displaystyle \sum_{i>j} \rho_{ij}^{(t-1)}} {\displaystyle n(n-1) / 2}
+$$
+</center>
+ <br>  
+
 
 Predicting the price correlation of two assets for future time periods is important in portfolio optimization. We apply LSTM recurrent neural networks
 (RNN) in predicting the stock price correlation coefficient of two individual
