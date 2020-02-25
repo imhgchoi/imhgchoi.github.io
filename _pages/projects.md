@@ -29,12 +29,14 @@ $$
 $$
 </center>  
 
-where $w_i$ and $w_j$ be the weights assigned to each asset in the portfolio, $\sigma_i$ and $\sigma_j$ the historical
-standard deviation, and $\rho_{ij}$ the correlation coefficient of those two.
+where $w_i$ and $w_j$ is the weights assigned to each asset in the portfolio, $\sigma_i$ and $\sigma_j$ the historical
+standard deviation, and $\rho_{ij}$ the correlation coefficient of the two.  
+In order to assess the $\sigma_p$ value for the next holding period, a proper correlation coefficient $\rho_{ij}$
+needs to be estimated.
  <br>
  <br>  
  
-* **How do we predict correlation coefficients?**
+* **How did we determine the correlation coefficient?**
 
 Here, various methods have been used to estimate the correlation coefficient value $\rho_{ij}$.  
 One of the most simplest and common method used is what so called the **Full Historical Model**. The model assumes that
@@ -65,7 +67,7 @@ $$
 \hat{\rho}_{ij}^{(t)} = \frac{\displaystyle \beta_i \beta_j \sigma_m^2} {\displaystyle \sigma_i \sigma_j}
 $$
 </center>
-where $\beta_i$/$\beta_j$ are the beta value for stock item $i$, and $\sigma_m$ is the market's volatility,
+where $\beta_i$/$\beta_j$ are the beta value for stock item $i$/$j$, and $\sigma_m$ is the market's volatility,
  <br>  
 
 the **Multi-Group Model**
@@ -95,14 +97,14 @@ elaboration for each model.
 * **Room for Improvements?**  
 
 The above models only consider linearity in their predictions. However, the financial data are innately non-linear,
-thus calling for non-linear models for its correlation coefficient predictions. In my project paper, I proposed to
-adopt the ARIMA-LSTM hybrid model to capture both linearity and non-linearity in prediction.  
-Note that the ARIMA-LSTM model was originally proposed in 2003 by G.P. Zhang, in his paper "[Time series forecasting using a hybrid ARIMA 
-and neural network model](https://www.sciencedirect.com/science/article/abs/pii/S0925231201007020)".
+thus making room for non-linear models in its predictions. In my project paper, I proposed to
+adopt the ARIMA-LSTM hybrid model to capture both linearity and non-linearity in the model.  
+_Note that the ARIMA-LSTM model was originally proposed in 2003 by G.P. Zhang, in his paper "[Time series forecasting using a hybrid ARIMA 
+and neural network model](https://www.sciencedirect.com/science/article/abs/pii/S0925231201007020)"._
 
 The ARIMA sector renders a linear prediction on the stream of correlation coefficients precomputed with a fixed-sized 
 sliding window. The order for each time series is selected dynamically based on its AIC values. Then, the residual value
-for each time step is computed, which becomes the input for the next LSTM RNN sector.
+for each time step is computed, which becomes the input for the next LSTM RNN sector to predict future residual values.
  
 <center>
 <img src="../assets/images/lstm.png" alt="drawing" width="450"/>
@@ -145,7 +147,7 @@ report : [Soccer Match Result Prediction and its Application](https://github.com
 slides : [PPT Slides](https://github.com/imhgchoi/imhgchoi.github.io/raw/master/assets/docs/Soccer_ppt.pdf)  
 codes : [github repo](https://github.com/imhgchoi/soccer-match-predict)  
 
-Note that this project was led as a team for an undergraduate Machine Learning [COSE362-2019F] course. The following
+Note that this project was led as a team for an undergraduate Machine Learning course [COSE362-2019F]. The following
 are the github links of those who were my teammates :  
    * [HyunHo Choi](https://github.com/chlgusgh715)
    * [JaeHyun Lee](https://github.com/LEE-JAE-HYUN179)
@@ -161,8 +163,8 @@ are the github links of those who were my teammates :
   
 * **Our Motivations**
 
-The sports betting market has been steadily growing for the past ten years, and the trend is still on-going. 
-Currently, the international sports betting market is presumed to have a market capitalization of $250 billion. In 
+The sports betting market has been steadily growing for the past ten years, and the trend is still on-going.
+Currently, the international sports betting market is presumed to have a market capitalization of $250 billion. In
 such a huge sports betting market, we believed that we could expect a greater profit through machine learning models.
 Thus, we aimed to build various machine learning models **_from-scratch_**, compare their performances in terms of
 F1 measure and Return On Investments (ROI), and assess its profitability in a simulated betting environment.
@@ -172,7 +174,7 @@ F1 measure and Return On Investments (ROI), and assess its profitability in a si
 * **What Data Did We Use?**
 
 We utilized the England Premier League datasets publicly available on [Football-Data.co.uk](https://football-data.co.uk/englandm.php). 
-The dataset contain information for each EPL soccer match from year 2008 to 2018. We largely refered to Andrew Carter's
+The dataset contain information for each EPL soccer match from year 2008 to 2018. We largely referred to Andrew Carter's
  [blog post](http://andrew.carterlunn.co.uk/programming/2018/02/20/beating-the-bookmakers-with-tensorflow.html) when
  preprocessing our data.  
  In order to both utilize classifiers and regression models, we created two different types of target variables :
